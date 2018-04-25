@@ -40,7 +40,7 @@ lista[i]=0;
 }
 
 
-// cambia los valores guardados en la lista para cada iteracion de tiempo
+// cambia los valores guardados en la lista para cada iteracion de tiempo no funciona apropiadamente jesus, porfavor ayudame a revisar el codigo pues no avanza.
  
 for(int t=0; t<700; t++)
 {
@@ -50,7 +50,7 @@ for(int i=1; i<4000; i++)
     posicion = 2+(i*dx);
     respuestas[i]= Udtmasuno(lista[i], vel, dt, dx,lista[(i-1)]);
 
-    cout << posicion <<" "<<lista[i];
+    cout <<" "<<lista[i];
 }
 cout << endl;
 
@@ -58,7 +58,9 @@ for(int c=1; c<4000; c++)
 {
     lista[c]= respuestas[c];
 }
+
 }
+
   return 0;
 }
 
